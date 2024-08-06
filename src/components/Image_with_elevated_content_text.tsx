@@ -4,11 +4,10 @@ import styled from 'styled-components';
 const Container = styled.div`
     padding: 30px 40px;
     background-color: white;
-    width: 60%;
-    position: absolute;
-    top: 20px;
-    right: 0;
-    min-height: 400px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-basis: 60%;
 `;
 
 const Image_with_elevated_content_title = styled.div`
