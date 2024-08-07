@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Container = styled.div`
-    padding: 30px 40px;
+    padding: 40px 50px;
     background-color: white;
     display: flex;
     flex-grow: 1;
@@ -34,20 +34,21 @@ const Button = styled.button`
   cursor: pointer;
   transition: background-color 0.3s;
   margin-top: 20px;
+  width: fit-content;
 `;
 
-const Image_with_elevated_content = () => {
+const Image_with_elevated_content = ({title, content,buttonContent}) => {
 
   return (
     <>
     <Container>
             <Image_with_elevated_content_title>
-                High-tech Engineering Industry
+              {title}
             </Image_with_elevated_content_title>
             <Image_with_elevated_content_content>
-                Our cutting-edge solutions empower businesses across insurance, banking, and financial services to navigate the complexities of the financial landscape seamlessly. We also cater to the evolving needs of retail and consumer industries, providing tailored software solutions that enhance customer experiences and drive operational efficiency. At the forefront of high-tech advancements, our expertise enables businesses to stay ahead in the rapidly evolving technological landscape.
+              {content}
             </Image_with_elevated_content_content>
-            <Button>Know More</Button>
+            <Button>{buttonContent}</Button>
 
     </Container>
     </>

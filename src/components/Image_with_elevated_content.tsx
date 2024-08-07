@@ -12,59 +12,24 @@ const Container = styled.div`
 const Bg_image_container = styled.div`
   display: flex;
   flex-grow: 1;
-  flex-basis: 40%;
-  background-image: url('https://t4.ftcdn.net/jpg/04/63/37/51/360_F_463375173_vBKRkUbVoCuS9lpUmhdfCc13pprPr148.jpg');
+  flex-basis: 55%;
+  background-image: url(${props => props.bgImage});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   transform: scale(1.05);
-  transform-origin: left;
+  transform-origin: left bottom;
   z-index: -1
   `;
 
 
-const Image_with_elevated_content = () => {
+const Image_with_elevated_content = ({ bgImage, title, content,buttonContent}) => {
 
   return (
     <Container>
-        <Bg_image_container>
+        <Bg_image_container bgImage={bgImage}>
         </Bg_image_container>
-        <Imagewith_elevated_content_text/>
-
-    {/* <section style={{
-      width: '100%',
-      height:'100%',
-      position: 'relative'
-    }}>
-        <section style={{
-          width: '100%',
-          height: '100%',
-          position: 'absolute',
-        }}>
-          <div style={{
-            width: '100%',
-            height: '10rem',
-            position: 'absolute',
-            backgroundColor: 'red'
-          }}>
-
-        </div>
-      </section>
-        <section style={{
-          width: '100%',
-          height: '10rem',
-          position: 'absolute',
-        }}>
-          <div style={{
-            width: '100%',
-            height: '100%',
-            position: 'absolute',
-            backgroundColor: 'blue'
-          }}>
-
-          </div>
-      </section>
-    </section> */}
+        <Imagewith_elevated_content_text title={title} content={content} buttonContent={buttonContent}/>
     </Container>
   )
 }
