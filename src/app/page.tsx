@@ -15,6 +15,8 @@ export default function Home() {
     <Image_with_elevated_content bgImage={backgroundImage} title={title} content={content} buttonContent={buttonContent}/>
      <div className="px-8 flex gap-8 mb-8">
         <Service_card bgImage={backgroundImage} title={title} content={content} buttonContent={buttonContent}/>
+        <Service_card bgImage={backgroundImage} title={title} content={content} buttonContent={buttonContent}/>
+        <Service_card bgImage={backgroundImage} title={title} content={content} buttonContent={buttonContent}/>
      </div>
 
     </>

@@ -25,7 +25,7 @@ export const Service_title_onhover = styled( Image_with_elevated_content_title, 
 `;
 export const Service_button = styled( Button, )`
   color: white;
-  border: 1px solid white;
+  border: 2px solid white;
   padding: 10px 20px;
 `;
 
