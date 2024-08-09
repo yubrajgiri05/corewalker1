@@ -52,4 +52,46 @@ export const Bg_image_container = styled.div`
   justify-content: stretch;
   padding: 0.8em 0em;
 `;
+export const Service_box = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  padding:40px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  `;
+
+export const Service_box_onhover = styled.div`
+width: 100%;
+height: 100%;
+border: 1px solid black;
+background-image:linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://t4.ftcdn.net/jpg/04/63/37/51/360_F_463375173_vBKRkUbVoCuS9lpUmhdfCc13pprPr148.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+top: 0;
+left: 100%;  
+padding: 40px 30px;
+
+`;
+export const Service_container = styled.div`
+  flex-basis: 33%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 350px;
+    
+     &:hover ${Service_box_onhover} {
+    left: 0;
+     }
+  `;
+
 
