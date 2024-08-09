@@ -52,3 +52,4 @@ export const Bg_image_container = styled.div`
   justify-content: stretch;
   padding: 0.8em 0em;
 `;
+
