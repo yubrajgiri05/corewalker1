@@ -1,13 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
+import {Image_with_elevated_content_container} from './index_style';
 import Imagewith_elevated_content_text from './Image_with_elevated_content_text'
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: stretch;
-  padding: 0.8em 0em;
-`;
+
 
 const Bg_image_container = styled.div`
   display: flex;
@@ -26,11 +22,11 @@ const Bg_image_container = styled.div`
 const Image_with_elevated_content = ({ bgImage, title, content,buttonContent}) => {
 
   return (
-    <Container>
+    <Image_with_elevated_content_container>
         <Bg_image_container bgImage={bgImage}>
         </Bg_image_container>
         <Imagewith_elevated_content_text title={title} content={content} buttonContent={buttonContent}/>
-    </Container>
+    </Image_with_elevated_content_container>
   )
 }
 

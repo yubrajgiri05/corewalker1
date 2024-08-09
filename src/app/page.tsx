@@ -1,5 +1,7 @@
 "use client";
 import Image_with_elevated_content from '../components/Image_with_elevated_content';
+import Service_card from '../components/Service_card';
+
 
 export default function Home() {
 
@@ -11,6 +13,12 @@ export default function Home() {
   return (
     <>  
     <Image_with_elevated_content bgImage={backgroundImage} title={title} content={content} buttonContent={buttonContent}/>
+     <div className="px-8 flex gap-8 mb-8">
+        <Service_card bgImage={backgroundImage} title={title} content={content} buttonContent={buttonContent}/>
+        <Service_card bgImage={backgroundImage} title={title} content={content} buttonContent={buttonContent}/>
+        <Service_card bgImage={backgroundImage} title={title} content={content} buttonContent={buttonContent}/>
+     </div>
+
     </>
   );
 }
