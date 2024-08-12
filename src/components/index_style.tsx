@@ -4,7 +4,7 @@ export const Container = styled.div`
   padding: 40px 50px;
   background-color: white;
   display: flex;
-  flex-grow: 1;
+  flex-grow: 0;
   flex-direction: column;
   flex-basis: 60%;
 `;
@@ -46,11 +46,15 @@ export const Bg_image_container = styled.div`
   transform-origin: left bottom;
   z-index: -1
   `;
- export const Image_with_elevated_content_container = styled.div`
+ export const Image_with_elevated_content_container = styled.div<{bgImage: string}>`
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: stretch;
-  padding: 0.8em 0em;
+  padding: 1em 0em; 
+  background-image: url(${props => props.bgImage});
+  background-size: 80% 90%;
+  background-repeat: no-repeat;
+ margin-bottom: 20px;
 `;
 export const Service_box = styled.div`
   width: 100%;
@@ -79,19 +83,38 @@ position: absolute;
 top: 0;
 left: 100%;  
 padding: 40px 30px;
+transition: left 0.3s;
+display:none;
+
+ @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+
 
 `;
 export const Service_container = styled.div`
-  flex-basis: 33%;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  width: 100%;
-  min-height: 350px;
-    
-     &:hover ${Service_box_onhover} {
+  width:75px;
+  height: 90px;  
+
+  @media screen and (min-width: 445px) {
+        width: 300px;
+        height: 300px; 
+  }
+  @media screen and (min-width: 768px) {
+    &:hover ${Service_box_onhover} {
     left: 0;
-     }
+      }
+        width: 205px;
+        height: 215px; 
+  }
+  @media screen and (min-width: 1024px) {
+        width: 300px;
+        height: 300px; 
+  }
   `;
 
 
