@@ -2,8 +2,8 @@
 import Customer_review_card from '@/components/Customer_review_card';
 import Testimonials_card from '@/components/Testimonials_card';
 
-import Image_with_elevated_content from '../components/Image_with_elevated_content';
-import Service_card from '../components/Service_card';
+import Image_with_elevated_content from '@/components/Image_with_elevated_content';
+import Service_card from '@/components/Service_card';
 
 
 export default function Home() {
@@ -16,12 +16,12 @@ export default function Home() {
   return (
     <>  
     <Image_with_elevated_content bgImage={backgroundImage} title={title} content={content} buttonContent={buttonContent}/>
-     <div className="container m-auto flex gap-8 mb-8">
-        <Service_card bgImage={backgroundImage} title={title} content={content} buttonContent={buttonContent}/>
+    <div className="container max-w-screen-xl m-auto flex gap-8 mb-8">
+    <Service_card bgImage={backgroundImage} title={title} content={content} buttonContent={buttonContent}/>
         <Service_card bgImage={backgroundImage} title={title} content={content} buttonContent={buttonContent}/>
         <Service_card bgImage={backgroundImage} title={title} content={content} buttonContent={buttonContent}/>
      </div>
-     <div className='container m-auto'>
+     <div className='container m-auto max-w-screen-xl'>
         <Customer_review_card content={content}/>
         <Testimonials_card content={content}/>
      </div>
