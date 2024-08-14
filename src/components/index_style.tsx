@@ -116,5 +116,28 @@ export const Service_container = styled.div`
         height: 300px; 
   }
   `;
+  export const Customer_review_card_container = styled.div`
+  padding: 60px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+`;
+export const Customer_review_card_text = styled.div`
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: white;
+  padding-top: 20px;
+  position: relative;
+  &:before {
+    content: " '' ";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 60px;
+    color: white;
+  }
+`;
 
 

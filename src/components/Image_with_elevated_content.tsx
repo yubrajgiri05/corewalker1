@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components';
 import {Image_with_elevated_content_container} from './index_style';
 import Imagewith_elevated_content_text from './Image_with_elevated_content_text'
 
