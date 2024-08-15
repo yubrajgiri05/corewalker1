@@ -12,7 +12,7 @@ export default function Home() {
   const title = 'High-tech Engineering Industry';
   const content = 'Our cutting-edge solutions empower businesses across insurance, banking, and financial services to navigate the complexities of the financial landscape seamlessly. We also cater to the evolving needs of retail and consumer industries, providing tailored software solutions that enhance customer experiences and drive operational efficiency. At the forefront of high-tech advancements, our expertise enables businesses to stay ahead in the rapidly evolving technological landscape.';
   const buttonContent = 'know More';
-
+  const src = '/metajpeg.jpeg';
   return (
     <>  
     <Image_with_elevated_content bgImage={backgroundImage} title={title} content={content} buttonContent={buttonContent}/>
@@ -23,7 +23,7 @@ export default function Home() {
      </div>
      <div className='container m-auto max-w-screen-xl'>
         <Customer_review_card content={content}/>
-        <Testimonials_card content={content}/>
+        <Testimonials_card content={content} src={src}/>
      </div>
 
     </>
