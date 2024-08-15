@@ -139,5 +139,24 @@ export const Customer_review_card_text = styled.div`
     color: white;
   }
 `;
+export const Testimonials_profile = styled.div`
+padding-top: 15px;
+display: flex;
+gap: 15px;
+align-items: center;
+`;
+export const Testimonials_profile_text = styled.div`
+display: flex;
+flex-direction: column;
+gap: 5px;
+`;
+export const Testimonials_profile_name = styled.div`
+font-size: 18px;
+font-weight: 800;
+`;
+export const Testimonials_profile_addreess = styled.div`
+font-size: 14px;
+font-weight: 400;
+`;
 
 
