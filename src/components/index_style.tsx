@@ -158,5 +158,32 @@ export const Testimonials_profile_addreess = styled.div`
 font-size: 14px;
 font-weight: 400;
 `;
-
+export const Insight_text_container = styled.div`
+  padding: 40px 50px;
+  background-color: white;
+  border-radius: 15px;
+  width:33%;
+  height: fit-content;
+`;
+export const Insight_title = styled.div`
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 15px 0;
+`;
+export const Insight_content = styled.div`
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+`;
+export const Insight_readmore = styled.div`
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 25px;
+  padding-top: 35px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+`;
 

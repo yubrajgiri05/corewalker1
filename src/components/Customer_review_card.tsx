@@ -2,9 +2,6 @@ import React from 'react'
 import {Customer_review_card_container,Customer_review_card_text} from './index_style';
 
 
-
-
-
 const Customer_review_card = ({content}) => {
   return (
     <>
