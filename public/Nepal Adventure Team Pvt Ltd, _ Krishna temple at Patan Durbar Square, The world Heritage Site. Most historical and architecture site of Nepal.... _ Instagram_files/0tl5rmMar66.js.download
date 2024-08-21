@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("PolarisStoriesV3TrayQuery$Parameters",["PolarisStoriesV3TrayQuery_instagramRelayOperation"],(function(a,b,c,d,e,f){"use strict";a={kind:"PreloadableConcreteRequest",params:{id:b("PolarisStoriesV3TrayQuery_instagramRelayOperation"),metadata:{is_distillery:!0},name:"PolarisStoriesV3TrayQuery",operationKind:"query",text:null}};e.exports=a}),null);
