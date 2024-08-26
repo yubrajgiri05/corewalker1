@@ -5,6 +5,8 @@ import Image_with_elevated_content from '@/components/Image_with_elevated_conten
 import Service_card from '@/components/Service_card';
 import Insight_card from '@/components/Insight_card';
 import Insight_card_withImg from '@/components/Insight_card_withImg';
+import Mission_card from '@/components/Mission_card';
+import Vision_card from '@/components/Vision_card';
 
 
 export default function Home() {
@@ -31,9 +33,12 @@ export default function Home() {
      <div className='container m-auto max-w-screen-xl pt-8 flex gap-4'>
         <Insight_card_withImg image={image}/>
         <Insight_card/>
-
-
      </div>
+     <div className='container m-auto max-w-screen-xl py-8 flex flex-col gap-4'>
+         <Mission_card/>
+         <Vision_card/>
+     </div>
+
 
     </>
   );
