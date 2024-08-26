@@ -12,6 +12,7 @@ export const Insight_card_withImg_container = styled.div`
 export const Service_contents = styled( Insight_text_container, )`
   width: 100%;
   border-radius: 0px;
+  padding: 20px 40px;
 `;
 const Insight_card_withImg = ({image}) => {
   return (

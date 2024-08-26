@@ -186,4 +186,32 @@ export const Insight_readmore = styled.div`
   gap: 10px;
   cursor: pointer;
 `;
+export const About_container = styled.div`
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+`;
+export const About_card_img = styled.div`
+    flex-basis: 40%;
+    font-size: 90px;
+    `;
+export const About_card_text = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    `;
+export const About_card_title = styled.div`
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    `;
+export const About_card_content = styled.div`
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    `;
 
