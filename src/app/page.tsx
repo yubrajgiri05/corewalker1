@@ -7,6 +7,7 @@ import Insight_card from '@/components/Insight_card';
 import Insight_card_withImg from '@/components/Insight_card_withImg';
 import Mission_card from '@/components/Mission_card';
 import Vision_card from '@/components/Vision_card';
+import Service_features_card from '@/components/Service_features_card';
 
 
 export default function Home() {
@@ -37,6 +38,7 @@ export default function Home() {
      <div className='container m-auto max-w-screen-xl py-8 flex flex-col gap-4'>
          <Mission_card/>
          <Vision_card/>
+         <Service_features_card/>
      </div>
 
 

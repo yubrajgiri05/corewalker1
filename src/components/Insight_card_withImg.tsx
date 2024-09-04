@@ -32,7 +32,7 @@ const Insight_card_withImg = ({image}) => {
                 <Insight_readmore>
                     Read more <FaArrowRight />
                 </Insight_readmore>
-            </Service_contents>
+        </Service_contents>
       </Insight_card_withImg_container>
     </>
   )
